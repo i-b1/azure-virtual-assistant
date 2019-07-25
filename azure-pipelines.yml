@@ -30,16 +30,16 @@ stages:
       displayName: 'Restore project dependencies'
       inputs:
         command: 'restore'
-        projects: '**/EchoBot1*.csproj'
+        projects: '**/EchoBot1.csproj'
 
     - task: DotNetCoreCLI@2
       displayName: 'Build the project - $(buildConfiguration)'
       inputs:
         command: 'build'
         arguments: '--no-restore --configuration $(buildConfiguration)'
-        projects: '**/EchoBot1*.csproj'
+        projects: '**/EchoBot1.csproj'
 
-     #- task: DotNetCoreCLI@2
+      #- task: DotNetCoreCLI@2
       #displayName: 'Run unit tests - $(buildConfiguration)'
       #inputs:
       #  command: 'test'
