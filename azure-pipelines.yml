@@ -39,7 +39,7 @@ stages:
         arguments: '--no-restore --configuration $(buildConfiguration)'
         projects: '**/EchoBot1*.csproj'
 
-    - #task: DotNetCoreCLI@2
+     #- task: DotNetCoreCLI@2
       #displayName: 'Run unit tests - $(buildConfiguration)'
       #inputs:
       #  command: 'test'
