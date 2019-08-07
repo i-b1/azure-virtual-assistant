@@ -1,0 +1,681 @@
+{
+  "error": null,
+  "id": "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.Resources/deployments/deployment_dry_run",
+  "name": "deployment_dry_run",
+  "properties": {
+    "correlationId": "25f16d77-da87-4728-9f5b-0ab5cf72b06a",
+    "debugSetting": null,
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.Web/serverfarms/IBPwCVirtualAssistant-457v6xv",
+            "resourceGroup": "virtualassistant-rg",
+            "resourceName": "IBPwCVirtualAssistant-457v6xv",
+            "resourceType": "Microsoft.Web/serverfarms"
+          }
+        ],
+        "id": "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.Web/sites/IBPwCVirtualAssistant-457v6xv",
+        "resourceGroup": "virtualassistant-rg",
+        "resourceName": "IBPwCVirtualAssistant-457v6xv",
+        "resourceType": "Microsoft.Web/sites"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.Insights/components/IBPwCVirtualAssistant-457v6xv",
+            "resourceGroup": "virtualassistant-rg",
+            "resourceName": "IBPwCVirtualAssistant-457v6xv",
+            "resourceType": "Microsoft.Insights/components"
+          }
+        ],
+        "id": "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.BotService/botServices/IBPwCVirtualAssistant-457v6xv",
+        "resourceGroup": "virtualassistant-rg",
+        "resourceName": "IBPwCVirtualAssistant-457v6xv",
+        "resourceType": "Microsoft.BotService/botServices"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.Web/Sites/IBPwCVirtualAssistant-qnahost-457v6xv",
+            "resourceGroup": "virtualassistant-rg",
+            "resourceName": "IBPwCVirtualAssistant-qnahost-457v6xv",
+            "resourceType": "Microsoft.Web/Sites"
+          },
+          {
+            "id": "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.Search/searchServices/ibpwcvirtualassistant-search-457v6xv",
+            "resourceGroup": "virtualassistant-rg",
+            "resourceName": "ibpwcvirtualassistant-search-457v6xv",
+            "resourceType": "Microsoft.Search/searchServices"
+          },
+          {
+            "id": "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/microsoft.insights/components/IBPwCVirtualAssistant-457v6xv",
+            "resourceGroup": "virtualassistant-rg",
+            "resourceName": "IBPwCVirtualAssistant-457v6xv",
+            "resourceType": "microsoft.insights/components"
+          }
+        ],
+        "id": "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.CognitiveServices/accounts/IBPwCVirtualAssistant-qna-457v6xv",
+        "resourceGroup": "virtualassistant-rg",
+        "resourceName": "IBPwCVirtualAssistant-qna-457v6xv",
+        "resourceType": "Microsoft.CognitiveServices/accounts"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.Web/serverFarms/IBPwCVirtualAssistant-457v6xv",
+            "resourceGroup": "virtualassistant-rg",
+            "resourceName": "IBPwCVirtualAssistant-457v6xv",
+            "resourceType": "Microsoft.Web/serverFarms"
+          }
+        ],
+        "id": "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.Web/sites/IBPwCVirtualAssistant-qnahost-457v6xv",
+        "resourceGroup": "virtualassistant-rg",
+        "resourceName": "IBPwCVirtualAssistant-qnahost-457v6xv",
+        "resourceType": "Microsoft.Web/sites"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.Web/Sites/IBPwCVirtualAssistant-qnahost-457v6xv",
+            "resourceGroup": "virtualassistant-rg",
+            "resourceName": "IBPwCVirtualAssistant-qnahost-457v6xv",
+            "resourceType": "Microsoft.Web/Sites"
+          },
+          {
+            "id": "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.Insights/components/IBPwCVirtualAssistant-457v6xv",
+            "resourceGroup": "virtualassistant-rg",
+            "resourceName": "IBPwCVirtualAssistant-457v6xv",
+            "resourceType": "Microsoft.Insights/components"
+          },
+          {
+            "id": "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.Search/searchServices/ibpwcvirtualassistant-search-457v6xv",
+            "resourceGroup": "virtualassistant-rg",
+            "resourceName": "ibpwcvirtualassistant-search-457v6xv",
+            "resourceType": "Microsoft.Search/searchServices"
+          },
+          {
+            "actionName": "listAdminKeys",
+            "apiVersion": "2015-08-19",
+            "id": "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.Search/searchServices/ibpwcvirtualassistant-search-457v6xv",
+            "resourceGroup": "virtualassistant-rg",
+            "resourceName": "ibpwcvirtualassistant-search-457v6xv",
+            "resourceType": "Microsoft.Search/searchServices"
+          },
+          {
+            "apiVersion": "2015-05-01",
+            "id": "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.Insights/components/IBPwCVirtualAssistant-457v6xv",
+            "resourceGroup": "virtualassistant-rg",
+            "resourceName": "IBPwCVirtualAssistant-457v6xv",
+            "resourceType": "Microsoft.Insights/components"
+          }
+        ],
+        "id": "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.Web/sites/IBPwCVirtualAssistant-qnahost-457v6xv/config/appsettings",
+        "resourceGroup": "virtualassistant-rg",
+        "resourceName": "IBPwCVirtualAssistant-qnahost-457v6xv/appsettings",
+        "resourceType": "Microsoft.Web/sites/config"
+      }
+    ],
+    "duration": "PT0S",
+    "mode": "Incremental",
+    "onErrorDeployment": null,
+    "outputs": null,
+    "parameters": {
+      "appInsightsLocation": {
+        "type": "String",
+        "value": "canadacentral"
+      },
+      "appInsightsName": {
+        "type": "String",
+        "value": "IBPwCVirtualAssistant-457v6xv"
+      },
+      "appServicePlanName": {
+        "type": "String",
+        "value": "IBPwCVirtualAssistant-457v6xv"
+      },
+      "appServicePlanSku": {
+        "type": "Object",
+        "value": {
+          "name": "S1",
+          "tier": "Standard"
+        }
+      },
+      "botServiceName": {
+        "type": "String",
+        "value": "IBPwCVirtualAssistant-457v6xv"
+      },
+      "botServiceSku": {
+        "type": "String",
+        "value": "S1"
+      },
+      "botWebAppName": {
+        "type": "String",
+        "value": "IBPwCVirtualAssistant-457v6xv"
+      },
+      "contentModeratorLocation": {
+        "type": "String",
+        "value": "canadacentral"
+      },
+      "contentModeratorName": {
+        "type": "String",
+        "value": "IBPwCVirtualAssistant-cm-457v6xv"
+      },
+      "contentModeratorSku": {
+        "type": "String",
+        "value": "S0"
+      },
+      "cosmosDbName": {
+        "type": "String",
+        "value": "IBPwCVirtualAssistant-457v6xv"
+      },
+      "location": {
+        "type": "String",
+        "value": "canadacentral"
+      },
+      "luisServiceLocation": {
+        "type": "String",
+        "value": "canadacentral"
+      },
+      "luisServiceName": {
+        "type": "String",
+        "value": "IBPwCVirtualAssistant-luis-457v6xv"
+      },
+      "luisServiceSku": {
+        "type": "String",
+        "value": "S0"
+      },
+      "microsoftAppId": {
+        "type": "String",
+        "value": "9e17b8d2-4ea9-453f-a84e-d935e7af2b6a"
+      },
+      "microsoftAppPassword": {
+        "type": "String",
+        "value": "IBPwCVirtualAssistantPassw0rd!"
+      },
+      "name": {
+        "type": "String",
+        "value": "IBPwCVirtualAssistant"
+      },
+      "qnaMakerSearchName": {
+        "type": "String",
+        "value": "IBPwCVirtualAssistant-search-457v6xv"
+      },
+      "qnaMakerSearchSku": {
+        "type": "String",
+        "value": "standard"
+      },
+      "qnaMakerServiceName": {
+        "type": "String",
+        "value": "IBPwCVirtualAssistant-qna-457v6xv"
+      },
+      "qnaMakerServiceSku": {
+        "type": "String",
+        "value": "S0"
+      },
+      "qnaMakerWebAppName": {
+        "type": "String",
+        "value": "IBPwCVirtualAssistant-qnahost-457v6xv"
+      },
+      "qnaServiceLocation": {
+        "type": "String",
+        "value": "canadacentral"
+      },
+      "storageAccountName": {
+        "type": "String",
+        "value": "IBPwCVirtualAssistant-457v6xv"
+      },
+      "suffix": {
+        "type": "String",
+        "value": "457v6xv"
+      },
+      "useContentModerator": {
+        "type": "Bool",
+        "value": true
+      },
+      "useCosmosDb": {
+        "type": "Bool",
+        "value": true
+      },
+      "useStorage": {
+        "type": "Bool",
+        "value": true
+      }
+    },
+    "parametersLink": null,
+    "providers": [
+      {
+        "id": null,
+        "namespace": "Microsoft.Resources",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "deployments"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.DocumentDB",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "canadacentral"
+            ],
+            "properties": null,
+            "resourceType": "databaseAccounts"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Storage",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "canadacentral"
+            ],
+            "properties": null,
+            "resourceType": "storageAccounts"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Web",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "canadacentral"
+            ],
+            "properties": null,
+            "resourceType": "serverFarms"
+          },
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "canadacentral"
+            ],
+            "properties": null,
+            "resourceType": "sites"
+          },
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "sites/config"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Insights",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "canadacentral"
+            ],
+            "properties": null,
+            "resourceType": "components"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.BotService",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "global"
+            ],
+            "properties": null,
+            "resourceType": "botServices"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.CognitiveServices",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "canadacentral",
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "accounts"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Search",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "canadacentral"
+            ],
+            "properties": null,
+            "resourceType": "searchServices"
+          }
+        ]
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "template": null,
+    "templateHash": "12877687829899094620",
+    "templateLink": null,
+    "timestamp": "2019-08-07T19:07:52.107856+00:00",
+    "validatedResources": [
+      {
+        "apiVersion": "2018-02-01",
+        "id": "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.Resources/deployments/3822b5f4-d098-4b57-9ee6-3bee686aec4c",
+        "name": "3822b5f4-d098-4b57-9ee6-3bee686aec4c",
+        "properties": {
+          "mode": "Incremental",
+          "template": {
+            "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+            "contentVersion": "1.0.0.0",
+            "resources": []
+          }
+        },
+        "resourceGroup": "virtualassistant-rg",
+        "type": "Microsoft.Resources/deployments"
+      },
+      {
+        "apiVersion": "2015-04-08",
+        "id": "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.DocumentDB/databaseAccounts/ibpwcvirtualassistant-457v6xv",
+        "kind": "GlobalDocumentDB",
+        "location": "canadacentral",
+        "name": "ibpwcvirtualassistant-457v6xv",
+        "properties": {
+          "databaseAccountOfferType": "Standard",
+          "locations": [
+            {
+              "failoverPriority": 0,
+              "locationName": "canadacentral"
+            }
+          ]
+        },
+        "resourceGroup": "virtualassistant-rg",
+        "type": "Microsoft.DocumentDB/databaseAccounts"
+      },
+      {
+        "apiVersion": "2018-07-01",
+        "id": "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.Storage/storageAccounts/ibpwcvirtualassistant457",
+        "kind": "StorageV2",
+        "location": "canadacentral",
+        "name": "ibpwcvirtualassistant457",
+        "resourceGroup": "virtualassistant-rg",
+        "sku": {
+          "name": "Standard_LRS"
+        },
+        "type": "Microsoft.Storage/storageAccounts"
+      },
+      {
+        "apiVersion": "2018-02-01",
+        "id": "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.Web/serverFarms/IBPwCVirtualAssistant-457v6xv",
+        "location": "canadacentral",
+        "name": "IBPwCVirtualAssistant-457v6xv",
+        "properties": {},
+        "resourceGroup": "virtualassistant-rg",
+        "sku": {
+          "name": "S1",
+          "tier": "Standard"
+        },
+        "type": "Microsoft.Web/serverFarms"
+      },
+      {
+        "apiVersion": "2015-05-01",
+        "id": "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.Insights/components/IBPwCVirtualAssistant-457v6xv",
+        "kind": "web",
+        "location": "canadacentral",
+        "name": "IBPwCVirtualAssistant-457v6xv",
+        "properties": {
+          "Application_Type": "web"
+        },
+        "resourceGroup": "virtualassistant-rg",
+        "type": "Microsoft.Insights/components"
+      },
+      {
+        "apiVersion": "2018-02-01",
+        "dependsOn": [
+          "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.Web/serverfarms/IBPwCVirtualAssistant-457v6xv"
+        ],
+        "id": "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.Web/sites/IBPwCVirtualAssistant-457v6xv",
+        "location": "canadacentral",
+        "name": "IBPwCVirtualAssistant-457v6xv",
+        "properties": {
+          "serverFarmId": "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.Web/serverfarms/IBPwCVirtualAssistant-457v6xv",
+          "siteConfig": {
+            "appSettings": [
+              {
+                "name": "MicrosoftAppId",
+                "value": "9e17b8d2-4ea9-453f-a84e-d935e7af2b6a"
+              },
+              {
+                "name": "MicrosoftAppPassword",
+                "value": "IBPwCVirtualAssistantPassw0rd!"
+              }
+            ],
+            "webSocketsEnabled": true
+          }
+        },
+        "resourceGroup": "virtualassistant-rg",
+        "type": "Microsoft.Web/sites"
+      },
+      {
+        "apiVersion": "2018-07-12",
+        "dependsOn": [
+          "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.Insights/components/IBPwCVirtualAssistant-457v6xv"
+        ],
+        "id": "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.BotService/botServices/IBPwCVirtualAssistant-457v6xv",
+        "kind": "sdk",
+        "location": "global",
+        "name": "IBPwCVirtualAssistant-457v6xv",
+        "properties": {
+          "developerAppInsightKey": "[reference(resourceId('Microsoft.Insights/components', parameters('appInsightsName'))).InstrumentationKey]",
+          "developerAppInsightsApplicationId": "[reference(resourceId('Microsoft.Insights/components', parameters('appInsightsName'))).ApplicationId]",
+          "displayName": "IBPwCVirtualAssistant-457v6xv",
+          "endpoint": "https://ibpwcvirtualassistant-457v6xv.azurewebsites.net/api/messages",
+          "isStreamingSupported": true,
+          "msaAppId": "9e17b8d2-4ea9-453f-a84e-d935e7af2b6a"
+        },
+        "resourceGroup": "virtualassistant-rg",
+        "sku": {
+          "name": "S1"
+        },
+        "type": "Microsoft.BotService/botServices"
+      },
+      {
+        "apiVersion": "2017-04-18",
+        "id": "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.CognitiveServices/accounts/IBPwCVirtualAssistant-cm-457v6xv",
+        "kind": "ContentModerator",
+        "location": "canadacentral",
+        "name": "IBPwCVirtualAssistant-cm-457v6xv",
+        "resourceGroup": "virtualassistant-rg",
+        "sku": {
+          "name": "S0"
+        },
+        "type": "Microsoft.CognitiveServices/accounts"
+      },
+      {
+        "apiVersion": "2017-04-18",
+        "id": "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.CognitiveServices/accounts/IBPwCVirtualAssistant-luis-457v6xv",
+        "kind": "LUIS",
+        "location": "canadacentral",
+        "name": "IBPwCVirtualAssistant-luis-457v6xv",
+        "resourceGroup": "virtualassistant-rg",
+        "sku": {
+          "name": "S0"
+        },
+        "type": "Microsoft.CognitiveServices/accounts"
+      },
+      {
+        "apiVersion": "2017-04-18",
+        "dependsOn": [
+          "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.Web/Sites/IBPwCVirtualAssistant-qnahost-457v6xv",
+          "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.Search/searchServices/ibpwcvirtualassistant-search-457v6xv",
+          "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/microsoft.insights/components/IBPwCVirtualAssistant-457v6xv"
+        ],
+        "id": "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.CognitiveServices/accounts/IBPwCVirtualAssistant-qna-457v6xv",
+        "kind": "QnAMaker",
+        "location": "westus",
+        "name": "IBPwCVirtualAssistant-qna-457v6xv",
+        "properties": {
+          "apiProperties": {
+            "qnaRuntimeEndpoint": "[concat('https://',reference(resourceId('Microsoft.Web/sites', variables('qnaMakerWebAppName'))).hostNames[0])]"
+          }
+        },
+        "resourceGroup": "virtualassistant-rg",
+        "sku": {
+          "name": "S0"
+        },
+        "type": "Microsoft.CognitiveServices/accounts"
+      },
+      {
+        "apiVersion": "2015-08-19",
+        "id": "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.Search/searchServices/ibpwcvirtualassistant-search-457v6xv",
+        "location": "canadacentral",
+        "name": "ibpwcvirtualassistant-search-457v6xv",
+        "properties": {
+          "hostingMode": "default",
+          "partitionCount": 1,
+          "replicaCount": 1
+        },
+        "resourceGroup": "virtualassistant-rg",
+        "sku": {
+          "name": "standard"
+        },
+        "type": "Microsoft.Search/searchServices"
+      },
+      {
+        "apiVersion": "2016-08-01",
+        "dependsOn": [
+          "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.Web/serverFarms/IBPwCVirtualAssistant-457v6xv"
+        ],
+        "id": "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.Web/sites/IBPwCVirtualAssistant-qnahost-457v6xv",
+        "location": "canadacentral",
+        "name": "IBPwCVirtualAssistant-qnahost-457v6xv",
+        "properties": {
+          "enabled": true,
+          "hostingEnvironment": "",
+          "name": "IBPwCVirtualAssistant-qnahost-457v6xv",
+          "serverFarmId": "/subscriptions//subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourcegroups/virtualassistant-rg/providers/Microsoft.Web/serverfarms/IBPwCVirtualAssistant-457v6xv",
+          "siteConfig": {
+            "cors": {
+              "allowedOrigins": [
+                "*"
+              ]
+            }
+          }
+        },
+        "resourceGroup": "virtualassistant-rg",
+        "type": "Microsoft.Web/sites"
+      },
+      {
+        "apiVersion": "2016-08-01",
+        "dependsOn": [
+          "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.Web/Sites/IBPwCVirtualAssistant-qnahost-457v6xv",
+          "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.Insights/components/IBPwCVirtualAssistant-457v6xv",
+          "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.Search/searchServices/ibpwcvirtualassistant-search-457v6xv"
+        ],
+        "id": "/subscriptions/800fcad9-d1b9-4366-a829-d644ff82505d/resourceGroups/virtualassistant-rg/providers/Microsoft.Web/sites/IBPwCVirtualAssistant-qnahost-457v6xv/config/appsettings",
+        "name": "IBPwCVirtualAssistant-qnahost-457v6xv/appsettings",
+        "properties": {
+          "AzureSearchAdminKey": "[listAdminKeys(resourceId('Microsoft.Search/searchServices/', variables('qnaMakerSearchName')), '2015-08-19').primaryKey]",
+          "AzureSearchName": "ibpwcvirtualassistant-search-457v6xv",
+          "DefaultAnswer": "No good match found in KB.",
+          "PrimaryEndpointKey": "IBPwCVirtualAssistant-qnahost-457v6xv-PrimaryEndpointKey",
+          "QNAMAKER_EXTENSION_VERSION": "latest",
+          "SecondaryEndpointKey": "IBPwCVirtualAssistant-qnahost-457v6xv-SecondaryEndpointKey",
+          "UserAppInsightsAppId": "[reference(resourceId('Microsoft.Insights/components/', parameters('appInsightsName')), '2015-05-01').AppId]",
+          "UserAppInsightsKey": "[reference(resourceId('Microsoft.Insights/components/', parameters('appInsightsName')), '2015-05-01').InstrumentationKey]",
+          "UserAppInsightsName": "IBPwCVirtualAssistant-457v6xv"
+        },
+        "resourceGroup": "virtualassistant-rg",
+        "type": "Microsoft.Web/sites/config"
+      }
+    ]
+  },
+  "resourceGroup": "virtualassistant-rg"
+}
+{
+  "applicationInsights": {
+    "type": "Object",
+    "value": {
+      "InstrumentationKey": "1249b50e-94e7-4440-801d-6be54a6afa5e"
+    }
+  },
+  "blobStorage": {
+    "type": "Object",
+    "value": {
+      "connectionString": "DefaultEndpointsProtocol=https;AccountName=ibpwcvirtualassistant457;AccountKey=rbFNvs2D7X6TjNo4C1cLCGWCo5C/gTDY+3JknuZq1hanSFlPtEDYm+6uWTCdEPph97cenqCCDGWcrsURtKgSeA==;EndpointSuffix=core.windows.net",
+      "container": "transcripts"
+    }
+  },
+  "botWebAppName": {
+    "type": "String",
+    "value": "IBPwCVirtualAssistant-457v6xv"
+  },
+  "contentModerator": {
+    "type": "Object",
+    "value": {
+      "key": "e0b1f996ee254158b057014763df9a6f"
+    }
+  },
+  "cosmosDb": {
+    "type": "Object",
+    "value": {
+      "authKey": "9C1qCm15eurTO70k92i8SEHCpEwoi0DIgDOzQSe23ZThk36VY1b8berzkabkjudJ6Ry12ocjT52fCSFyJNJFqQ==",
+      "collectionId": "botstate-collection",
+      "cosmosDBEndpoint": "https://ibpwcvirtualassistant-457v6xv.documents.azure.com:443/",
+      "databaseId": "botstate-db"
+    }
+  },
+  "luis": {
+    "type": "Object",
+    "value": {
+      "accountName": "IBPwCVirtualAssistant-luis-457v6xv",
+      "key": "c3af5fe9465d47a19d42b43adcbc127d",
+      "region": "canadacentral"
+    }
+  },
+  "qnaMaker": {
+    "type": "Object",
+    "value": {
+      "endpoint": "https://ibpwcvirtualassistant-qnahost-457v6xv.azurewebsites.net",
+      "key": "31dfd3c900084857b70cff030b98dc22"
+    }
+  }
+}
